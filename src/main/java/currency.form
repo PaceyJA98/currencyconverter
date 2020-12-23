@@ -122,11 +122,19 @@
         <Component class="javax.swing.JComboBox" name="txtfrom">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
+              <StringArray count="12">
                 <StringItem index="0" value="USD"/>
                 <StringItem index="1" value="Euro"/>
                 <StringItem index="2" value="SriLankan Rupees"/>
                 <StringItem index="3" value="Indian Rupees"/>
+                <StringItem index="4" value="British Pound"/>
+                <StringItem index="5" value="Japanese Yen"/>
+                <StringItem index="6" value="Canadian Dollar"/>
+                <StringItem index="7" value="Swiss Franc"/>
+                <StringItem index="8" value="Chinese Renmimbi"/>
+                <StringItem index="9" value="Hong Kong Dollar"/>
+                <StringItem index="10" value="New Zealand Dollar"/>
+                <StringItem index="11" value="Australian Dollar"/>
               </StringArray>
             </Property>
           </Properties>

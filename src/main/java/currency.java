@@ -37,7 +37,7 @@ public class currency extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(0));
+        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel1.setText("Enter the Amount ");
 
@@ -51,7 +51,7 @@ public class currency extends javax.swing.JFrame {
             }
         });
 
-        txtfrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "USD", "Euro", "SriLankan Rupees", "Indian Rupees" }));
+        txtfrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "USD", "Euro", "SriLankan Rupees", "Indian Rupees", "British Pound", "Japanese Yen", "Canadian Dollar", "Swiss Franc", "Chinese Renmimbi", "Hong Kong Dollar", "New Zealand Dollar", "Australian Dollar" }));
 
         txtto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SriLankan Rupees", "Indian Rupees", "Euro", "British Pound", "Japanese Yen", "Canadian Dollar", "Swiss Franc", "Chinese Renmimbi", "Hong Kong Dollar", "New Zealand Dollar", "Australian Dollar", "USD" }));
 
@@ -128,7 +128,7 @@ public class currency extends javax.swing.JFrame {
         Double total;
         Double amount = Double.parseDouble(txtamount.getText());
         
-        //From USD to Any
+        //From USD to Any--------------------------------------------------------------------------------
         if(txtfrom.getSelectedItem().toString().equals("USD"))
         { 
             if(txtto.getSelectedItem().toString().equals( "SriLankan Rupees")){
@@ -172,7 +172,8 @@ public class currency extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
             }
         }
-        //From Euro to Any
+        
+        //From Euro to Any-------------------------------------------------------------------------------
         if(txtfrom.getSelectedItem().toString().equals("Euro"))
         { 
             if(txtto.getSelectedItem().toString().equals( "SriLankan Rupees")){
@@ -216,7 +217,8 @@ public class currency extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
             }
         }
-        //From SriLankan Rupee to Any
+        
+        //From SriLankan Rupee to Any--------------------------------------------------------------------
         if(txtfrom.getSelectedItem().toString().equals("SriLankan Rupees"))
         { 
             if(txtto.getSelectedItem().toString().equals( "Euro")){
@@ -260,7 +262,8 @@ public class currency extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
             }
         }
-        //From Indian Rupee to Any
+        
+        //From Indian Rupee to Any-----------------------------------------------------------------------
         if(txtfrom.getSelectedItem().toString().equals("Indian Rupees"))
         { 
             if(txtto.getSelectedItem().toString().equals( "Euro")){
@@ -301,6 +304,321 @@ public class currency extends javax.swing.JFrame {
             }
             else if(txtto.getSelectedItem().toString().equals("Australian Dollar")){
                 total = amount * .01791;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+        }
+        
+        //From British Pound to Any-----------------------------------------------------------------------
+        if(txtfrom.getSelectedItem().toString().equals("British Pound"))
+        { 
+            if(txtto.getSelectedItem().toString().equals( "Euro")){
+                total = amount * 1.097;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("SriLankan Rupees")){
+                total = amount * 249.95;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("USD")){
+                total = amount * 1.339;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Indian Rupees")){
+                total = amount * 98.87 ;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Japanese Yen")){
+                total = amount * 138.59;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Canadian Dollar")){
+                total = amount * 1.7256;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Swiss Franc")){
+                total = amount * 1.188;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Chinese Renmimbi")){
+                total = amount * 8.764;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Hong Kong Dollar")){
+                total = amount * 10.38;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Australian Dollar")){
+                total = amount * 1.77429;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+        }
+        
+        //From Japanese Yen to Any-----------------------------------------------------------------------
+        if(txtfrom.getSelectedItem().toString().equals("Japanese Yen"))
+        { 
+            if(txtto.getSelectedItem().toString().equals( "Euro")){
+                total = amount * .00792;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("SriLankan Rupees")){
+                total = amount * 1.80;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("USD")){
+                total = amount * .00966;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Indian Rupees")){
+                total = amount * .71 ;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("British Pound")){
+                total = amount * .00721;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Canadian Dollar")){
+                total = amount * .01245;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Swiss Franc")){
+                total = amount * .00857;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Chinese Renmimbi")){
+                total = amount * .06323;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Hong Kong Dollar")){
+                total = amount * .07490;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Australian Dollar")){
+                total = amount * .0128;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+        }
+        
+        //From Canadian Dollar to Any-----------------------------------------------------------------------
+        if(txtfrom.getSelectedItem().toString().equals("Canadian Dollar"))
+        { 
+            if(txtto.getSelectedItem().toString().equals( "Euro")){
+                total = amount * .63567;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("SriLankan Rupees")){
+                total = amount * 144.827;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("USD")){
+                total = amount * .7759;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Indian Rupees")){
+                total = amount * 57.29 ;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Japanese Yen")){
+                total = amount * 80.30;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("British Pound")){
+                total = amount * .57933;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Swiss Franc")){
+                total = amount * .68845;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Chinese Renmimbi")){
+                total = amount * 5.07816;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Hong Kong Dollar")){
+                total = amount * 6.01;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Australian Dollar")){
+                total = amount * 1.02806;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+        }
+        
+        //From Swiss Franc to Any-----------------------------------------------------------------------
+        if(txtfrom.getSelectedItem().toString().equals("Swiss Franc"))
+        { 
+            if(txtto.getSelectedItem().toString().equals( "Euro")){
+                total = amount * .92318;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("SriLankan Rupees")){
+                total = amount * 210.318;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("USD")){
+                total = amount * 1.126;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Indian Rupees")){
+                total = amount * 83.1995 ;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Japanese Yen")){
+                total = amount * 116.62;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Canadian Dollar")){
+                total = amount * 1.45198;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("British Pound")){
+                total = amount * .841;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Chinese Renmimbi")){
+                total = amount * 7.37452;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Hong Kong Dollar")){
+                total = amount * 8.7359;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Australian Dollar")){
+                total = amount * 1.49296;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+        }
+        
+        //From Chinese Renmimbi to Any-----------------------------------------------------------------------
+        if(txtfrom.getSelectedItem().toString().equals("Chinese Renmimbi"))
+        { 
+            if(txtto.getSelectedItem().toString().equals( "Euro")){
+                total = amount * .12514;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("SriLankan Rupees")){
+                total = amount * 28.51;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("USD")){
+                total = amount * .15275;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Indian Rupees")){
+                total = amount * 11.2783 ;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Japanese Yen")){
+                total = amount * 15.81;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Canadian Dollar")){
+                total = amount * .19683;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Swiss Franc")){
+                total = amount * .13553;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("British Pound")){
+                total = amount * .11405;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Hong Kong Dollar")){
+                total = amount * 1.18422;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Australian Dollar")){
+                total = amount * .20238;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+        }
+        
+        //From Hong Kong Dollar to Any-----------------------------------------------------------------------
+        if(txtfrom.getSelectedItem().toString().equals("Hong Kong Dollar"))
+        { 
+            if(txtto.getSelectedItem().toString().equals( "Euro")){
+                total = amount * .10566;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("SriLankan Rupees")){
+                total = amount * 24.0738;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("USD")){
+                total = amount * .1289;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Indian Rupees")){
+                total = amount * 9.52334 ;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Japanese Yen")){
+                total = amount * 13.35;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Canadian Dollar")){
+                total = amount * .16620;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Swiss Franc")){
+                total = amount * .11444;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Chinese Renmimbi")){
+                total = amount * .84412;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("British Pound")){
+                total = amount * .09630;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Australian Dollar")){
+                total = amount * .17089;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+        }
+        
+        //From Australian Dollar to Any-----------------------------------------------------------------------
+        if(txtfrom.getSelectedItem().toString().equals("Australian Dollar"))
+        { 
+            if(txtto.getSelectedItem().toString().equals( "Euro")){
+                total = amount * .61823;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("SriLankan Rupees")){
+                total = amount * 140.842;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("USD")){
+                total = amount * .7546;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Indian Rupees")){
+                total = amount * 55.7155 ;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Japanese Yen")){
+                total = amount * 78.10;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Canadian Dollar")){
+                total = amount * .9723;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Swiss Franc")){
+                total = amount * .66951;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Chinese Renmimbi")){
+                total = amount * 4.93844;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("Hong Kong Dollar")){
+                total = amount * 5.85012;
+                JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
+            }
+            else if(txtto.getSelectedItem().toString().equals("British Pound")){
+                total = amount * .56339;
                 JOptionPane.showMessageDialog(this, "Your Amount will be " + total.toString());
             }
         }
